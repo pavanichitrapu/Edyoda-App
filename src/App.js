@@ -5,6 +5,7 @@ import classes from './App.module.css';
 import Header from './Components/TopBar/Header';
 import Footer from './Components/Footer/Footer';
 import HomePage from './ContainerPages/HomePage/HomePage';
+import TopicDetailsPage from './ContainerPages/TopicsDetailsPage/TopicDetailsPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         
         <div className={classes.Content}>
             <Route exact path = "/HomePage" component={HomePage} />
+            <Route path="/CourseInfo/" component={TopicDetailsPage} />
         </div>
         
         <Footer/>

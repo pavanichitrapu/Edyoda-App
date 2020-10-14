@@ -1,14 +1,17 @@
 .CourseCard{
     border:1px solid #3DAEFF;
     border-radius:10px;
-    display:flex;
-    align-items: center;
+    background-color: #fff;
     margin:6px;
     padding:25px;
     box-sizing: border-box;
     box-shadow: 0 0 4px 0  #3DAEFF;
     width: calc(25% - 12px);
-    
+    cursor:pointer;
+}
+.CardLink{
+    text-decoration: none;
+    display:flex;
 }
 
 .Thumbnail{
@@ -21,6 +24,7 @@
 .CardInfo{   
     width:50%;
     box-sizing: border-box;
+    
 }
 .Title{
     font-weight: 500;

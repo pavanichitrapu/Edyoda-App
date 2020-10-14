@@ -1,9 +1,9 @@
 .HomePageContainer{
-    padding:0 20px;
+    margin-bottom:0px;
 }
 .CourseContainer{
     width: 100%;
-    margin:40px 0px;
+    margin-top:40px;
     display: flex;
     flex-wrap: wrap;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './CourseCard.module.css';
 import { SubHeading } from '../Heading/Heading';
 const styles = {
@@ -7,8 +8,9 @@ const styles = {
 
 const CourseCard = (props) => {
     return(
-                
+        
                 <div className={classes.CourseCard}>
+                       <Link className={classes.CardLink} to={`/CourseInfo/${props.Coursetitle}`}>
                         <div className={classes.Thumbnail}>
                                 <img className={classes.CourseLogo}  
                                         src={props.Courselogo} 
@@ -21,9 +23,9 @@ const CourseCard = (props) => {
                                 </div>
                                 
                         </div>
-            
+                        </Link> 
                 </div>
-       
+      
         
     );
 }
