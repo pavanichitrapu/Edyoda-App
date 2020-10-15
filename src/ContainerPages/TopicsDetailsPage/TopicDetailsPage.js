@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './TopicDetailsPage.module.css';
 import axios from 'axios';
 import { MainHeading } from '../../Components/Heading/Heading';
+import TopicDetailsCard from '../../Components/TopicDetailsCard/TopicDetailsCard';
 
 class TopicDetailsPage extends Component{
     
@@ -33,8 +34,8 @@ class TopicDetailsPage extends Component{
                     {
                         this.state.courseList.map(item => {
                             return <TopicDetailsCard key={item.id} id={item.id} 
-                            topic={item.topic}
-                            status={item.status}  />
+                            topic={topicDetailsPage[topic]}
+                            status={topicDetailsPage[status]}  />
                         })
                     }
                 </div>
